@@ -34,6 +34,12 @@ body{
 
 .nav-button:hover{
     background-color: #ff661a;
+    
+}
+
+/*logout button style*/
+#logout-button{
+    border-style: none;
 }
 
 /*h2 welcome for homepage handlebars view*/
@@ -41,6 +47,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 1rem;
     flex-wrap: wrap;
 }
@@ -50,6 +57,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 1rem;
     flex-wrap: wrap;
 }
@@ -71,6 +79,44 @@ body{
    
 }
 
+.body-buttons:hover{
+    background-color: #ff661a;
+}
+
+/*Styles For Login Handlebars View*/
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.login-form{
+    margin: 10px;
+}
+
+.form-input{
+    margin: 5px;
+}
+
+#login-submit-button{
+    color:#f8ecde;
+    background-color: #ff884d;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-style: none;
+}
+
+#login-submit-button:hover{
+    background-color: #ff661a;
+    cursor: pointer;
+}
 /* Media query for smaller screens, breakpoint is at max width of 480px for mobile layout*/
 @media screen and (max-width: 480px) {
     
