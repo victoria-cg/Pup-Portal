@@ -5,22 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pup Portal</title>
-  <!-- to include Tailwind CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- to include Tailwind CSS --> <!--Commented out link to Tailwind to test replacing with all custom CSS-->
+  <!--<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">-->
+  <!--Link to CSS stylesheet-->
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body class="bg-gray-100">
-  <header class="bg-blue-500 p-4 flex justify-between items-center">
-    <h1 class="text-white text-2xl font-bold">Pup Portal</h1>
-    <nav>
+<body>
+  <header id="main-header-container">
+    <h1 class="header-title">Pup Portal</h1>
+    <nav class="header-nav">
       <!-- Home Page Link -->
-      <a href="/" class="text-white mr-4">Home Page</a>
+      <a href="/" class="nav-button">Home Page</a>
       <!-- Conditional Rendering based on 'logged_in' -->
       {{#if logged_in}}
-      <button id="logout-button" class="text-white">Logout</button>
+      <button id="logout-button" class="nav-button">Logout</button>
       <script src="./js/logout.js"></script>
       {{else}}
-      <a href="/login" class="bg-gray-300 text-white font-bold px-4 py-2 rounded border border-gray-400">Login</a>
+      <a href="/login" class="nav-button">Login</a>
       {{/if}}
     </nav>
   </header>
