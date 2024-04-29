@@ -101,7 +101,7 @@ body{
     margin: 5px;
 }
 
-#login-submit-button{
+#login-submit-button, #new-dog-submit{
     color:#f8ecde;
     background-color: #ff884d;
     padding: 8px;
@@ -113,10 +113,48 @@ body{
     border-style: none;
 }
 
-#login-submit-button:hover{
+#login-submit-button:hover, #new-dog-submit:hover{
     background-color: #ff661a;
     cursor: pointer;
 }
+
+/*Styles for view all dogs handlebars view*/
+#viewAll-h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.dog-containter, .dog-name, .dog-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;  
+}
+
+/*Styles for add a new dog handlebars view, submit button is coded along with the login button*/
+#new-dog-h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.new-dog-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap; 
+}
+
+
+
 /* Media query for smaller screens, breakpoint is at max width of 480px for mobile layout*/
 @media screen and (max-width: 480px) {
     
@@ -130,8 +168,10 @@ body{
         text-align: center;
     }
     .header-nav {
+        display: flex;
         flex-direction: column; /* Stack navigation links vertically */
         align-items: center; /* Align links to the center of their container */
+        justify-content: center;
       }
     
       .header-nav a {
