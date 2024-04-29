@@ -21,7 +21,7 @@ This project allowed our team to use a Model-View Controller file structure, a S
 - [Questions](#questions)
 
 ## Installation
-Pup Portal is deployed live at the following URL: https://stark-sea-69498-820d63f5ba2f.herokuapp.com/
+Pup Portal is deployed live at the following URL: https://protected-woodland-99005-7f5a7e5f2c52.herokuapp.com/ 
 Users can interact with the application in their web browser, and do not need to install anything. However, users must login with an example user in the database (choose one of the following):  {"name": "Victoria", "email": "victoria@gmail.com", "password": "password12345"}
       {"name": "Cassie","email": "cassie@gmail.com","password": "password678910"},
       {"name": "Carolina","email": "carolina@gmail.com","password": "mypassword01234"},
